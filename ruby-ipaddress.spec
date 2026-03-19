@@ -1,12 +1,12 @@
 %define pkgname ipaddress
 Summary:	IPv4/IPv6 addresses manipulation library
 Name:		ruby-%{pkgname}
-Version:	0.8.0
-Release:	5
+Version:	0.8.3
+Release:	1
 License:	Distributable
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	c1b274b056650390689360c9856f2180
+# Source0-md5:	15c3ce3bcf68ecaee8d25070b033bcac
 URL:		http://github.com/bluemonk/ipaddress
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.665
@@ -35,7 +35,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.rdoc CHANGELOG.rdoc LICENSE
+%doc README.rdoc CHANGELOG.rdoc LICENSE.txt
 %{ruby_vendorlibdir}/ipaddress.rb
 %{ruby_vendorlibdir}/ipaddress
 %{ruby_specdir}/%{pkgname}-%{version}.gemspec
